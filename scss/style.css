@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#container #grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (150px)[3];
+      grid-template-columns: repeat(3, 150px);
+  -ms-grid-rows: (150px)[4];
+      grid-template-rows: repeat(4, 150px);
+  grid-gap: 7px;
+}
+
+#container #grid-container div {
+  border-radius: 3px;
+  background-color: rgba(34, 34, 34, 0.125);
+}
+
+#container #btn-container {
+  width: 460px;
+  margin-bottom: 20px;
+  padding: 7px 0;
+  background-color: #404040;
+  text-align: center;
+  border-radius: 3px;
+}
+
+#container #btn-container #start-btn {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.score-details {
+  color: #fff;
+  font-size: 24px;
+}
+/*# sourceMappingURL=style.css.map */
